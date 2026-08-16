@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>DODGE // Block Runner</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>DODGE</h1>
+  <div class="subtitle">block runner // survive the descent</div>
+
+  <div class="game-frame">
+    <div class="hud">
+      <span>SCORE <span class="score-val" id="score">0</span></span>
+      <span>BEST <span class="best-val" id="best">0</span></span>
+    </div>
+    <div style="position: relative;">
+      <canvas id="game" width="480" height="640"></canvas>
+      <div class="overlay-msg" id="overlay">
+        <div class="big" id="overlayTitle">READY?</div>
+        <div class="small" id="overlaySub">Press SPACE or tap START to begin</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="controls-row">
+    <button id="startBtn">Start</button>
+    <span class="hint">← → or A / D to move, hold to steer</span>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
